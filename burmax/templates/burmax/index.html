@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burmax</title>
+</head>
+<body>
+<ul>
+    {% for shapes in all_shapes %}
+    <li><a href="/home/{{ shapes.id }}/">{{ shapes.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
